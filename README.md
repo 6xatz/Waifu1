@@ -1,88 +1,101 @@
 ## Mata Kuliah
-Sebagai tugas praktikum: [1] Bahasa Pemrograman | Universitas Pelita Bangsa. 
+
+Sebagai tugas praktikum: [1] Bahasa Pemrograman | Universitas Pelita Bangsa.
 
 ## Cara menggunakan Git
-1. Memilih Shortcut pada Git Bash,
-<p align="left">
-  <img src="/ss/1.jpg" width="450">
-</p>
 
-    Target: --cd-to-home
-    Start in: %HOMEDRIVE%%HOMEPATH%
+1.  Memilih Shortcut pada Git Bash,
+    <p align="left">
+      <img src="/ss/1.jpg" width="450">
+    </p>
 
-dua perintah ini berfungsi agar ***/home/*** yang akan digunakan nanti berada pada User yang logon saat ini.
+        Target: --cd-to-home
+        Start in: %HOMEDRIVE%%HOMEPATH%
 
-2. Konfigurasi Git Config secara Global,
-> bisa juga secara *individual repository*.
-<p align="left">
-  <img src="/ss/2.jpg" width="350">
-</p>
+dua perintah ini berfungsi agar **_/home/_** yang akan digunakan nanti berada pada User yang logon saat ini.
 
-    git config --global user.name "6xatz"
-    git config --global user.email "airalva@gmail.com"
+2.  Konfigurasi Git Config secara Global,
 
-Kalau typo (awokawok typo), santai aja. Bisa pake perintah ***--reset-author*** kok.
+    > bisa juga secara _individual repository_.
 
-3. Membuat Repository secara lokal pada drive dan menginisiasi Git,
-> disarankan membuat repository didalam folder kosong agar */home/* tidak berantakan.
-<p align="left">
-  <img src="/ss/3.jpg" width="380">
-</p>
+    <p align="left">
+      <img src="/ss/2.jpg" width="350">
+    </p>
 
-    pwd
-    mkdir waifu
-    cd waifu
-    git init
+        git config --global user.name "6xatz"
+        git config --global user.email "airalva@gmail.com"
 
-***pwd*** berfungsi untuk memeriksa tempat Git bekerja saat ini.
-***mkdir*** berfungsi untuk membuat folder atau direktori.
-***cd*** berfungsi untuk masuk ke sebuah direktori (***cd ..*** untuk kembali).
-***git init*** berfungsi untuk menginisiasi Git pada sebuah repository.
+Kalau typo (awokawok typo), santai aja. Bisa pake perintah **_--reset-author_** kok.
 
-4. Membuat Repository secara lokal pada drive dan menginisiasi Git,
-> karena kita sudah membuat *README.md* sebelumnya. maka pastikan kalian uncheck: create README.md .
-<p align="left">
-  <img src="/ss/4.jpg" width="330">
-</p>
+3.  Membuat Repository secara lokal pada drive dan menginisiasi Git,
 
-    echo "# waifu" >> README.md
+    > disarankan membuat repository didalam folder kosong agar _/home/_ tidak berantakan.
 
-***echo*** berfungsi untuk mengirim perintah ke konsol.
-***"# waifu"*** berfungsi untuk mengeksekusi perintah pada repository yang dituliskan.
-***README.md*** berfungsi untuk membuat *README.md* .
+    <p align="left">
+      <img src="/ss/3.jpg" width="380">
+    </p>
 
-5. Menambahkan sebuah files ke Git dan melakukan Commit,
-> kamu bisa menggunakan *git status* untuk memeriksa apakah terdapat files yang dimodifikasi atau tidak.
-<p align="left">
-  <img src="/ss/5.jpg" width="580">
-</p>
+        pwd
+        mkdir waifu
+        cd waifu
+        git init
 
-    git add README.md
-    git commit -m "Kembalilah ke masa lalu. Percayalah, kau akan menyesalinya."
+**_pwd_** berfungsi untuk memeriksa tempat Git bekerja saat ini.
+**_mkdir_** berfungsi untuk membuat folder atau direktori.
+**_cd_** berfungsi untuk masuk ke sebuah direktori (**_cd .._** untuk kembali).
+**_git init_** berfungsi untuk menginisiasi Git pada sebuah repository.
 
-***git add*** berfungsi untuk menambahkan files ke Git.
-***git commit -m "deskripsi"*** perintah ini berfungsi untuk *"git" -> "lakukan commit" -> "master" (branch) -> "Deskripsi/Alasan commit"*.
+4.  Membuat Repository secara lokal pada drive dan menginisiasi Git,
+
+    > karena kita sudah membuat _README.md_ sebelumnya. maka pastikan kalian uncheck: create README.md .
+
+    <p align="left">
+      <img src="/ss/4.jpg" width="330">
+    </p>
+
+        echo "# waifu" >> README.md
+
+**_echo_** berfungsi untuk mengirim perintah ke konsol.
+**_"# waifu"_** berfungsi untuk mengeksekusi perintah pada repository yang dituliskan.
+**_README.md_** berfungsi untuk membuat _README.md_ .
+
+5.  Menambahkan sebuah files ke Git dan melakukan Commit,
+
+    > kamu bisa menggunakan _git status_ untuk memeriksa apakah terdapat files yang dimodifikasi atau tidak.
+
+    <p align="left">
+      <img src="/ss/5.jpg" width="580">
+    </p>
+
+        git add README.md
+        git commit -m "Kembalilah ke masa lalu. Percayalah, kau akan menyesalinya."
+
+**_git add_** berfungsi untuk menambahkan files ke Git.
+**_git commit -m "deskripsi"_** perintah ini berfungsi untuk _"git" -> "lakukan commit" -> "master" (branch) -> "Deskripsi/Alasan commit"_.
 
 6. Membuat Repository,
-> New Repository -> Create Repository.
-<p align="left">
-  <img src="/ss/6.jpg" width="650">
-</p>
+   > New Repository -> Create Repository.
+   <p align="left">
+     <img src="/ss/6.jpg" width="650">
+   </p>
 
-*konfigurasi harap sesuaikan dengan tugas masing-masing.*
+_konfigurasi harap sesuaikan dengan tugas masing-masing._
 
-7. Menyambungkan Git pada GitHub.
-> kamu akan disuruh Connect to GitHub (sync account) bisa menggunakan Browser/Token (saran sih make Browser biar lebih mudah).
-<p align="left">
-  <img src="/ss/7.jpg" width="580">
-</p>
+7.  Menyambungkan Git pada GitHub.
 
-    git remote add origin https://github.com/6xatz/waifu.git
-    git push -u origin master
+    > kamu akan disuruh Connect to GitHub (sync account) bisa menggunakan Browser/Token (saran sih make Browser biar lebih mudah).
 
-***git remote add*** berfungsi untuk menyambungkan Git dan GitHub repository.
-***git push*** berfungsi untuk push *git yang sudah di add sebelumnya* untuk di push ke *branch*.
-***master*** = branch.
+    <p align="left">
+      <img src="/ss/7.jpg" width="580">
+    </p>
+
+        git remote add origin https://github.com/6xatz/waifu.git
+        git push -u origin master
+
+**_git remote add_** berfungsi untuk menyambungkan Git dan GitHub repository.
+**_git push_** berfungsi untuk push _git yang sudah di add sebelumnya_ untuk di push ke _branch_.
+**_master_** = branch.
 
 ## Documentation
+
 All associated resources. are licensed under the [MIT License](https://mit-license.org/).
